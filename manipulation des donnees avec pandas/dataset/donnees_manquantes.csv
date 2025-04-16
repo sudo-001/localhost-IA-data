@@ -1,0 +1,11 @@
+id,nom,age,note_math,note_physique
+1,Alice,20,15.5,12.0
+2,Bob,21,,14.5
+3,Charlie,22,13.0,
+4,David,,11.5,10.0
+5,Eve,20,12.0,13.0
+6,Frank,22,14.0,15.0
+7,Grace,21,13.5,14.0
+8,Hannah,20,12.5,13.5
+9,Ian,22,14.5,12.5
+10,Julia,21,13.0,14.0
