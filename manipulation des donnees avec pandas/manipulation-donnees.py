@@ -16,4 +16,3 @@ df = df.rename(columns={
     'Prenom': 'New Nom',
     'Age': 'New Age'
 })
-
