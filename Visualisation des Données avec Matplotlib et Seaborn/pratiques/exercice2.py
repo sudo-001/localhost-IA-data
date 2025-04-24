@@ -1,26 +1,22 @@
 import seaborn as sns
-import pandas as pd
 import matplotlib.pyplot as plt
 
-# Charger le dataset "tips"
-data = sns.load_dataset("tips")
+df = sns.load_dataset("tips")
 
-# Afficher un histogramme de total_bill
-plt.figure(figsize=(8, 5))
-sns.histplot(data['total_bill'], kde=True, bins=20, color='blue')
-plt.title("Histogramme de total_bill")
-plt.xlabel("Total Bill")
-plt.ylabel("Fréquence")
+# Histogramme de total_bill
+sns.histplot(df['total_bill'], bins=20, kde=True, color='skyblue')
+plt.title("Répartition des additions")
 plt.show()
 
-# Tracer un boxplot de tip par sex
-plt.figure(figsize=(8, 5))
-sns.boxplot(x='sex', y='tip', data=data, palette='pastel')
-plt.title("Boxplot de tip par sex")
-plt.xlabel("Sex")
-plt.ylabel("Tip")
+# Boxplot de tip par sexe
+sns.boxplot(x='sex', y='tip', data=df, palette="Set2")
+plt.title("Pourboires par sexe")
 plt.show()
 
-# Afficher une heatmap de la corrélation entre les variables numériques
-plt.figure(figsize=(8, 5))
-correlation_matrix = data.corr()
+# Heatmap de corrélations
+import pandas as pd
+correlation_matrix = df.corr(numeric_only=True)
+
+sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
+plt.title("Matrice de corrélation")
+plt.show()
