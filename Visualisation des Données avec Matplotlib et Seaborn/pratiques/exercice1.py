@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 x = [i for i in range(11)]
 y = [i**2 for i in x]
 # Tracer la courbe
-plt.plot(x, y, marker='o', linestyle='-', color='b')
+plt.plot(x, y, marker='o')
 
 # Ajouter un titre et des labels
 plt.title("Courbe de y = x²")
