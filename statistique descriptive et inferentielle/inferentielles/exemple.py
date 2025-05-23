@@ -14,6 +14,8 @@ stat, p_value = ttest_ind(male_tips, female_tips)
 print("Statistique t :", stat)
 print("Valeur p :", p_value)
 
+print("P_value ===> ", p_value)
+
 if p_value < 0.05:
     print("Difference significative entre les pourboires des hommes et des femmes")
 else:
