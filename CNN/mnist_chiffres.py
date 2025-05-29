@@ -22,7 +22,7 @@ model = tf.keras.Sequential([
     tf.keras.layers.Flatten(),
     tf.keras.layers.Dense(128, activation='relu'),
     tf.keras.layers.Dropout(0.5),  # Pour éviter l'overfitting
-    tf.keras.layers.Dense(10, activation='softmax')  # 10 classes pour les chiffres 0 à 9
+    tf.keras.layers.Dense(10, activation='softmax')  # 10 classes de 0 à 9
 ])
 
 # 4. Compilation du modèle
